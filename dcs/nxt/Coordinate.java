@@ -18,4 +18,8 @@ public class Coordinate {
     public int getY() {
         return this.y;
     }
+
+    public Vector getDifference(Coordinate c) {
+        return new Vector(this.getX() - c.getX(), this.getY() - c.getY());
+    }
 }
